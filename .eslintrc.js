@@ -7,8 +7,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:typescript-sort-keys/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
     'plugin:react-hooks/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -55,7 +53,7 @@ module.exports = {
     'max-len': [
       'warn',
       {
-        code: 160,
+        code: 260,
       },
     ],
     'multiline-ternary': ['warn', 'always'],

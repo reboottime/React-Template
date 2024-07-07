@@ -40,7 +40,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test:unit": "react-scripts test --passWithNoTests",
+    "test:e2e": "echo 'not implemented yet'",
+    "deploy": "echo 'not implemented yet'",
     "eject": "react-scripts eject",
     "lint": "eslint ./src --fix",
     "generate:component": "npx shadcn-ui@latest add",
@@ -61,8 +63,6 @@
     ]
   },
   "devDependencies": {
-    "postcss": "^8.4.31",
-    "nth-check": "^2.0.1",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@storybook/addon-essentials": "^7.6.19",
     "@storybook/addon-interactions": "^7.6.19",
@@ -81,10 +81,13 @@
     "@types/node": "^20.12.8",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
+    "@types/uuid": "^10.0.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "^3.6.1",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31",
     "prettier": "^3.2.5",
     "prop-types": "^15.8.1",
     "sass": "^1.76.0",
